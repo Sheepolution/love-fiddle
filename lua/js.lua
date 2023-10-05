@@ -153,10 +153,3 @@ JS.setDefaultErrorFunction(function(id, error)
         print(msg)
     end
 end)
-
-
-JS.callJS(JS.stringFunc(
-    [[
-        __getWebDB("%s");
-    ]]
-    , "__LuaJSDB"))

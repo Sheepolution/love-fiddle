@@ -1,3 +1,5 @@
+love.filesystem.write("_", "")
+
 __requestQueue = {}
 _requestCount = 0
 _Request =
@@ -42,8 +44,7 @@ end
 --it timeouts
 local function retrieveJS(funcToCall, id)
     --Used for retrieveData function
-    JS.callJS("FS.mkdirTree('" ..
-        love.filesystem.getSaveDirectory() .. "');FS.writeFile('" ..
+    JS.callJS("FS.writeFile('" ..
         love.filesystem.getSaveDirectory() .. "/__temp" .. id .. "', " .. funcToCall .. ");")
 end
 

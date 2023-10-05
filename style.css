@@ -1,0 +1,90 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b4e68;
+    color: #fff;
+}
+
+.header {
+    background-color: #0a2c40;
+    padding: 5px 0px;
+    text-align: center;
+    height: 110px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Quicksand";
+}
+
+.header h1 {
+    margin: 12px
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.code-editor {
+    padding: 10px;
+    color: #fff;
+}
+
+.iframe-container {
+    padding: 10px;
+}
+
+#saveButton {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background-color: #E57373;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#saveButton:hover {
+    background-color: #FF8A80;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #E57373;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.CodeMirror {
+    height: 560px;
+    font-size: 16px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Responsive handling */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .code-editor,
+    .iframe-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÖVE Fiddle</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/default.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/lua/lua.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/monokai.min.css">
+  <script src="love_api.js"></script>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>LÖVE Fiddle</h1>
+    <p>Write, run and share LÖVE in your browser</p>
+  </div>
+
+  <div class="container">
+    <div class="code-editor">
+      <div id="editor"></div>
+    </div>
+    <div class="iframe-container">
+      <iframe src="love.html" width="800" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <button id="saveButton">Share</button>
+
+  <footer>
+    <p>
+      Made by <a href="https://twitter.com/Sheepolution">Sheepolution</a>
+    </p>
+  </footer>
+</body>
+
+</html>

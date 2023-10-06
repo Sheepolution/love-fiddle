@@ -9,7 +9,7 @@ Write, run and share LÖVE in your browser
 1. Install [Love.js](https://github.com/Davidobot/love.js)
 2. Run `npx love.js lua bin`
 4. Copy `game.data`, `game.js`, `love.js` and `love.wasm` to the root folder (and optionally delete `bin`)
-5. In the rood folder run `node globalizeFS.js`
+5. In the root folder run `node globalizeFS.js`
 
 ## Credits
 
